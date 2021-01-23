@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+.container {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #405566;
+}
+
+header h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.6em;
+    padding: 0.5em;
+}
+
+main {
+    background-image: url("img/chuck_norris.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.cont {
+    text-align: center;
+}
+
+.cont-text {
+    background-color: cadetblue;
+    padding: 1.9em;
+    width: 360px;
+    border-radius: 0 100px 100px 0;
+    opacity: .7;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.cont-text p {
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+.cont-btn {
+    margin-left: 100px;
+}
+
+.btn {
+    background-color: #457677;
+    padding: 0.8em;
+    color: white;
+    font-size: 1.3em;
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    margin-top: 1em;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+button:focus {
+    outline: 0;
+}
+
+footer {
+    background-color: #858588;
+    justify-self: flex-end;
+}
+
+footer p {
+    text-align: center;
+    font-weight: 200;
+    font-size: 0.9em;
+    padding: 5px 0 5px 0;
+}
+
+@media all and (max-width: 600px) {
+    main {
+        background-position: center;
+        justify-content: flex-end;
+    }
+    .cont-text {
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 2em;
+        padding: 0.7em;
+    }
+    .cont-btn {
+        align-self: center;
+        margin-left: 0;
+        margin-bottom: 30px;
+        width: 50%;
+    }
+    .btn {
+        width: 100%;
+    }
+}
